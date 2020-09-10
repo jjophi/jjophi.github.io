@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jophi Joseph</title>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+<style>
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-family: 'Slabo 27px', serif;
+    background-color: #f4f4f4;
+}
+.page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card{
+    width: 100%;
+    max-width: 220px;
+    padding: 74px 20px 52px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.06);
+}
+.profile-pic{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.details{
+    text-align: center;
+    margin-top: 40px;
+}
+.details * {
+    margin: 0;
+}
+.tel{
+    margin-top: 12px;
+}
+.card::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 12px;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-30px);
+    background-color: #f4f4f4;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+h1{
+    color: #4a4a4a;
+    font-size: 26px;
+    font-weight: 400;
+}
+p{
+    color: #5d5d5d;
+    font-size: 14px;
+}
+.quote{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px;
+}
+.quote .author{
+    font-weight: bold;
+    font-style: italic;
+}
+.quote .author::before{
+    content: '\0268A';
+    margin: 0 4px;
+}
+</style>
 </head>
 <body>
-    <h1>Jophi Joseph</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam nulla, nobis similique qui accusantium eligendi officia cupiditate aspernatur assumenda quisquam libero nostrum aut non, voluptatum corporis repellendus! Cum, ab?</p>
+    <div class="page">
+        <div class="card">
+            <img class="profile-pic" src="src/jj.jpeg" alt="">
+            <div class="details">
+                <h1>Jophi Joseph</h1>
+                <p>Software Developer</p>
+                <p class="tel">+91 9495419657</p>
+                <p>jjophi@gmail.com</p>
+
+            </div>
+        </div>
+        <div class="quote">
+            <q>When you realize nothing is lacking, the whole world belongs to you.</q>
+            <span class="author">Lao Tzu</span>
+        </div>
+    </div>
 </body>
 </html>
